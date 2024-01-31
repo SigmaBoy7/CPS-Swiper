@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #F8F8F8;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
