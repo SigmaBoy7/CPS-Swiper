@@ -1,2 +1,71 @@
 @import url(reset.css);
 @import url(font.css);
+
+body{
+  background-color: #F8F8F8;
+}
+
+.brands__header{
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-top: 1px solid #D9FFF5;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: 'TT Lakes Regular', sans-serif;
+  text-transform: uppercase;
+  color: rgb(126, 126, 130);
+  background: rgb(248,248,248);
+  background: -moz-linear-gradient(90deg, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(90deg, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8f8f8",endColorstr="#ffffff",GradientType=1);
+}
+
+@media (min-width: 426px){
+  .swiper--disable{
+    display: none;
+  }
+}
+
+.swiper{
+  box-sizing: border-box;
+}
+
+
+.swiper-wrapper{
+  box-sizing: border-box;
+  max-width: 240px;
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+
+.swiper-wrapper::after{
+  content: "";
+  display: block;
+  min-width: 10px;
+  height: 10px;
+}
+
+.swiper-slide{
+  box-sizing: border-box;
+  width: 240px;
+  padding: 16px;
+  margin-right: 16px;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+}
+
+.swiper-slide__content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper-pagination{
+  position: static;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+  --swiper-pagination-color: #979797;
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+}
