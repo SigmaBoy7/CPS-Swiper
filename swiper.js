@@ -1,5 +1,5 @@
-import Swiper from '/swiper/swiper.min.mjs';
-import Pagination from '/swiper/modules/pagination.min.mjs';
+import Swiper from 'swiper/swiper.min.mjs';
+import Pagination from 'swiper/modules/pagination.min.mjs';
 
 const swiper = new Swiper('.brand__swiper', {
     // Optional parameters
