@@ -1,4 +1,6 @@
-const swiper = new Swiper('.brand__swiper', {
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -7,7 +9,15 @@ const swiper = new Swiper('.brand__swiper', {
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
-        clickable: true
+        clickable: true,
+    },
+
+    breakpoints: {
+        768: {
+            pagination: {
+                enabled: false
+            },
+        }
     },
 
     // Navigation arrows
@@ -20,4 +30,11 @@ const swiper = new Swiper('.brand__swiper', {
     scrollbar: {
         el: '.swiper-scrollbar',
     },
+
 });
+
+if (window.innerWidth < 768) {
+    swiper.init();
+  } else{
+    swiper.destroy();
+}
